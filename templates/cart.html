@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block header %}
+    <h1>Cart</h1>
+{% endblock %}
+
+{% block content %}
+    Cart content
+{% endblock %}
+
+{% block cartButton %}
+<a href="{% url 'app:cart' %}">
+    <div class="cartImg">
+        <img src="{% static 'img/cart_selected.png' %}">
+    </div>
+    <span>Cart</span>
+</a>
+{% endblock %}
